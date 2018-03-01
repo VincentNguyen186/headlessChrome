@@ -26,17 +26,16 @@ test = require('tape');
   await Promise.all([Page.enable(), Runtime.enable(), DOM.enable()]);
 
   Page.navigate({
-  url: 'https://en.wikipedia.org/wiki/SitePoint'
+  //url: 'https://en.wikipedia.org/wiki/SitePoint'
   //url: 'http://localhost/video-interface.php?guid=22HC0002B02&display=Core+1&userGUID=92ACBC10-4795-42E1-95EF-D66EA9649C50&debug=true'
+    url: 'http://localhost:3000/test.php'
   });
 
   
   Page.loadEventFired(async() => {
     
-  const script1 = "document.querySelector('p').textContent";
-  // Evaluate script1
   const result = await Runtime.evaluate({
-    expression: script1
+    expression: "document.getElementById(\'click-here\').value"
   });
   console.log(result.result.value);
 
