@@ -1,11 +1,14 @@
 language: node_js
 node_js:
     - "node"
+dist: trusty
 sudo: required
+addons:
+  chrome: stable
 
-#before_install:
- #  -  start your web application and listen on `localhost:3000`
- #  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost:3000
+before_install:
+   #-  start your web application and listen on `localhost:3000`
+   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost:3000
 
 #before_script:
  # - "export DISPLAY=:99.0"
