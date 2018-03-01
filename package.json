@@ -3,6 +3,8 @@
     "test": "node index.js"
   },
   "devDependencies": {
-    "tape": "*"
+    "tape": "*",
+    "chrome-launcher": "*",
+    "chrome-remote-interface": "*"
   }
 }
