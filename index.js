@@ -28,7 +28,7 @@ test = require('tape');
   Page.navigate({
   //url: 'https://en.wikipedia.org/wiki/SitePoint'
   //url: 'http://localhost/video-interface.php?guid=22HC0002B02&display=Core+1&userGUID=92ACBC10-4795-42E1-95EF-D66EA9649C50&debug=true'
-    url: 'http://localhost/test.php'
+    url: 'http://localhost:3000/test.php'
   });
 
   
